@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Le Buzzeur !</title>
+  <div>
+  <script>
+    function playSound() {
+      var audio = new Audio('/ALRMBuzr_Buzzer 4 (ID 1586)_LS.mp3');
+      audio.play();
+    }
+  </script>
+  <button class="btn-large btn-yellow" onclick="alert('Quelle est la réponse ?')"><style>.btn-large {
+    font-size: 24px;
+    padding: 64px 128px;
+ }
+ 
+ .btn-yellow {
+    background-color: yellow;
+    color: #333;
+    border: yes;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+ }
+ 
+ .btn-yellow:hover {
+    background-color: #ffd700;
+ }
+ </style>Buzz
+ </button>
+</head>
+
+<body>
+  <audio onclick="playSound()">Appuyez ici</audio>
+</div>
+</body>
+
+</html>
