@@ -7,20 +7,9 @@
 			font-size: 48px;
 			padding: 128px 256px;
 			position: relative;
-		}
-
-		.btn-yellow {
-			background-color: yellow;
-			color: #333;
-			border: yes;
-			border-radius: 8px;
+			border: none;
+			background: none;
 			cursor: pointer;
-			transition: background-color 0.3s ease;
-			position: relative;
-		}
-
-		.btn-yellow:hover {
-			background-color: #ffd700;
 		}
 
 		.circle {
@@ -29,6 +18,7 @@
 			overflow: hidden;
 			width: 200px;
 			height: 200px;
+			cursor: pointer;
 		}
 
 		.circle img {
@@ -39,10 +29,9 @@
 	</style>
 </head>
 <body>
-	<div class="circle">
+	<div class="circle" onclick="playSound()">
 		<img src="msnnn.jpeg" alt="Image du buzzeur">
 	</div>
-	<button class="btn-large btn-yellow" onclick="alert('Quelle est la réponse ?')">Buzz</button>
 	<audio id="myAudio">
 		<source src="tono de messenger 2.mp3" type="audio/mpeg">
   		<source src="audio.mp3" type="audio/mpeg">
@@ -56,6 +45,5 @@
 			audio.play();
 		}
 	</script>
-	<button onclick="playSound()">Buzz</button>
 </body>
 </html>
